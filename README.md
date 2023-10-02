@@ -1,3 +1,12 @@
+# Task: Zabava Labs
+
+### Project is a responsive NFT Collection Display web-app
+
+![image](https://github.com/abhiraj-mengade/gallery/assets/72497928/19d79b78-f556-4189-8466-7a19740668a8)
+![image](https://github.com/abhiraj-mengade/gallery/assets/72497928/66811676-b0e6-43b7-a858-ea0259e02ac9)
+
+### Follwoing instructions can be followed to reproduce
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
