@@ -56,8 +56,6 @@ export default function Home() {
       omitMetadata: omitMetadata,
     });
 
-    // console.log(nfts);
-
     let arr = [];
     for (let i = 0; i < nfts.length; i++) {
       const nft = nfts[i];
@@ -67,7 +65,6 @@ export default function Home() {
       ]);
     }
     setNfts(arr);
-    console.log(arr);
   };
 
   const runMain = async () => {
@@ -75,7 +72,6 @@ export default function Home() {
       await main();
     } catch (error) {
       alert("Error: " + error);
-      console.log(error);
     }
   };
 
@@ -85,7 +81,7 @@ export default function Home() {
 
   return (
     <main>
-      <div className="flex justify-center items-center h-[40vh]">
+      <div className="my-[2%] flex justify-center items-center h-[40vh]">
         <Canvas flat linear className="h-full w-l">
           <OrbitControls />
           <ambientLight />
@@ -119,26 +115,13 @@ export default function Home() {
           onClick={() => reload()}
         ></div>
       </div>
-      <div className="flex min-h-screen flex-col items-center justify-between px-24 py-[5%]">
+      <div className="flex min-h-screen flex-col items-center justify-between px-[10%] py-[5%]">
         <div class="container px-5 mx-auto">
           <div class="flex flex-wrap -m-4 text-center">
-            {/* <div class="p-4 md:w-1/4 sm:w-1/2 w-full h-[100px]">
-              <div class="border-2 mx-auto border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
-                <Image
-                  src={
-                    "https:ipfs.io/ipfs/QmUiCqmHZd5CxeGsamizmS2Y8eSuMkNgVN44RzLcFVctyw"
-                  }
-                  width={200}
-                  height={200}
-                  className="rounded-lg w-[80%] m-auto"
-                />
-                <h2 className="p-1 text-2xl font-dots ">NFT</h2>
-              </div>
-            </div> */}
             {nftc &&
               nftc.map((nft, index) => (
                 <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-                  <div class="border-2 mx-auto border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
+                  <div class="border-2 mx-auto border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110 bg-slate-900">
                     <Image
                       src={nft[1]}
                       width={200}
